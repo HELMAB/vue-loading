@@ -1,4 +1,4 @@
-# Vue Loading Screen
+# Vuejs Loading Screen
 Using to block whlie client processed work.
 
 ## Screenshot
@@ -9,20 +9,20 @@ height="auto">
 
 ## Installation
 ```js
-npm i --save vue-loading-screen
+npm i --save vuejs-loading-screen
 ```
 
 ## Usage
 ```js
 import Vue from 'vue'
-import {loading} from 'vue-loading-screen'
+import {loading} from 'vuejs-loading-screen'
 
 Vue.use(loading)
 ```
 
 ```vue
 <template>
-    <h1>Welcome to Vue Loading Screen</h1>
+    <h1>Welcome to VueLoading Screen</h1>
 </template>
 
 <script>

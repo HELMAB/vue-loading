@@ -1,6 +1,6 @@
 {
-  "name": "vue-loading-screen",
-  "version": "1.0.0",
+  "name": "vuejs-loading-screen",
+  "version": "1.0.2",
   "description": "Blocking screen while process worked",
   "main": "index.js",
   "scripts": {
