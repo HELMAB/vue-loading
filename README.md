@@ -1,9 +1,12 @@
 # vue-loading-screen
 Using to block whlie client processed work.
 
+## Screenshot
+![alt text](http://url/to/img.png)
+
 ## Installation
 ```js
-    npm i --save vue-loading-screen
+npm i --save vue-loading-screen
 ```
 
 ## Usage
