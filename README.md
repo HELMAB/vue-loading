@@ -22,5 +22,21 @@ Vue.use(loading)
 
 ```vue
 <template>
+    <h1>Welcome to Vue Loading Screen</h1>
 </template>
+
+<script>
+    methods: {
+        fetchData () {
+            this.$isLoading(true) // show loading screen
+            this.$axios.post(url).then((response) => {
+                    this.$isLoading(false) // hide loading screen
+                    console.log(response)
+                })
+        }
+    },
+    mounted () {
+        this.fetchData()
+    }
+</script>
 ```
