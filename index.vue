@@ -7,6 +7,7 @@
 
 <script>
 	export default {
+		name: 'VuejsLoadingScreen',
 		data () {
 			return {
 				isLoading: false

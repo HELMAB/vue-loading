@@ -1,4 +1,4 @@
-import indexVue from './index'
+import indexVue from './index.vue'
 
 function plugin( Vue, options ){
 	var myPluginVue = Vue.extend( indexVue )
