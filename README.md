@@ -2,7 +2,7 @@
 Using to block whlie client processed work.
 
 ## Screenshot
-![alt text](http://url/to/img.png)
+<img src="https://github.com/HELMAB/vue-loading/blob/master/assets/screenshot.png" alt="Screenshot" width="200" height="auto">
 
 ## Installation
 ```js
