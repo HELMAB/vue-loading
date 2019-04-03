@@ -7,15 +7,35 @@
 
 <script>
 	export default {
-		data : function(){
+		data () {
 			return {
 				isLoading: false
 			}
 		},
 		methods : {
-			changeStatus: function( isLoading ){
-				this.isLoading = isLoading;
+			changeStatus ( isLoading ){
+				this.isLoading = isLoading
 			}
 		}
 	}
 </script>
+
+<style scoped>
+  .loading{
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    z-index: 99999 !important;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  .loading i {
+    position: absolute;
+    opacity: 1;
+    left: 48vw;
+    top: 48vh;
+  }
+</style>
