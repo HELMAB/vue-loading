@@ -1,0 +1,22 @@
+{
+  "name": "vue-loading-screen",
+  "version": "1.0.0",
+  "description": "Blocking screen while process worked",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HELMAB/vue-loading.git"
+  },
+  "keywords": [
+    "vue-loading-screen"
+  ],
+  "author": "HEL Mab",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HELMAB/vue-loading/issues"
+  },
+  "homepage": "https://github.com/HELMAB/vue-loading#readme"
+}
