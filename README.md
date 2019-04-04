@@ -2,7 +2,7 @@
 Using to block whlie client processed work.
 
 ## Screenshot
-<img src="https://github.com/HELMAB/vue-loading/blob/master/assets/screenshot.png" 
+<img src="https://raw.githubusercontent.com/HELMAB/vue-loading/master/assets/screenshot.png" 
 alt="Screenshot" 
 width="890" 
 height="auto">
@@ -15,7 +15,7 @@ npm i --save vuejs-loading-screen
 ## Usage
 ```js
 import Vue from 'vue'
-import {loading} from 'vuejs-loading-screen'
+import loading from 'vuejs-loading-screen'
 
 Vue.use(loading)
 ```
