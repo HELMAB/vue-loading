@@ -28,15 +28,16 @@
     top: 0;
     right: 0;
     bottom: 0;
-    height: 100%;
+    height: 100vh;
     z-index: 99999 !important;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .loading i {
     position: absolute;
     opacity: 1;
-    left: 48vw;
-    top: 48vh;
   }
 </style>
