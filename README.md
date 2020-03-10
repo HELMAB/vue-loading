@@ -26,17 +26,19 @@ Vue.use(loading)
 </template>
 
 <script>
-    methods: {
-        fetchData () {
-            this.$isLoading(true) // show loading screen
-            this.$axios.post(url).then((response) => {
-                    this.$isLoading(false) // hide loading screen
-                    console.log(response)
-                })
+    export default {
+        methods: {
+            fetchData () {
+                this.$isLoading(true) // show loading screen
+                this.$axios.post(url).then((response) => {
+                        this.$isLoading(false) // hide loading screen
+                        console.log(response)
+                    })
+            }
+        },
+        mounted () {
+            this.fetchData()
         }
-    },
-    mounted () {
-        this.fetchData()
     }
 </script>
 ```
