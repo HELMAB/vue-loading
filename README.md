@@ -17,12 +17,7 @@ npm i --save vuejs-loading-screen
 import Vue from 'vue'
 import loading from 'vuejs-loading-screen'
 
-Vue.use(loading, {
-    bg: '#41b883ad',
-    icon: 'refresh',
-    size: 3,
-    icon_color: 'white',
-})
+Vue.use(loading)
 ```
 
 ```vue
@@ -48,11 +43,23 @@ Vue.use(loading, {
 </script>
 ```
 
+## Customization
+
+If you want to modify such background, icon size, color, type, you just configure options such:
+```js
+Vue.use(loading, {
+    bg: '#41b883ad',
+    icon: 'refresh',
+    size: 3,
+    icon_color: 'white',
+})
+```
+
 ## Configurations
 
 | Option        | Value           | Description  |
 | ------------- | -------------| -----|
-| bg      | `default: '41b883ad'` | : color string |
+| bg      | `default: '#41b883ad'` | : color string |
 | icon      | `deault: 'spinner'`      |   : support font-awesome |
 | size | `default: '3'`      |    : {1, 2, 3, 4, 5} string |
 | icon_color | `default: '#ffffff'`      |    : color string |
