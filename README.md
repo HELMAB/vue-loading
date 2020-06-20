@@ -8,7 +8,7 @@ width="890"
 height="auto">
 
 ## Installation
-```js
+```
 npm i --save vuejs-loading-screen
 ```
 
@@ -17,7 +17,12 @@ npm i --save vuejs-loading-screen
 import Vue from 'vue'
 import loading from 'vuejs-loading-screen'
 
-Vue.use(loading)
+Vue.use(loading, {
+    bg: '#41b883ad',
+    icon: 'refresh',
+    size: 3,
+    icon_color: 'white',
+})
 ```
 
 ```vue
@@ -42,3 +47,12 @@ Vue.use(loading)
     }
 </script>
 ```
+
+## Configurations
+
+| Option        | Value           | Description  |
+| ------------- | -------------| -----|
+| bg      | `default: '41b883ad'` | : color string |
+| icon      | `deault: 'spinner'`      |   : support font-awesome |
+| size | `default: '3'`      |    : {1, 2, 3, 4, 5} string |
+| icon_color | `default: '#ffffff'`      |    : color string |
