@@ -30,6 +30,9 @@ export default {
                     if (options.hasOwnProperty('icon_color')) {
                         vm.icon_color = options.icon_color
                     }
+                    if (options.hasOwnProperty('slot')) {
+                        vm.slot = options.slot
+                    }
                 }
             }
         })

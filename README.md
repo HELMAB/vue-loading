@@ -63,3 +63,4 @@ Vue.use(loading, {
 | icon      | `deault: 'spinner'`      |   : support font-awesome |
 | size | `default: '3'`      |    : {1, 2, 3, 4, 5} string |
 | icon_color | `default: '#ffffff'`      |    : color string |
+| slot | `default: font-awesome`      |    : raw html |

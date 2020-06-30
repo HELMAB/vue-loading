@@ -2,9 +2,14 @@
     <div class="loading"
          :style="`background-color: ${bg};`"
          v-show="isLoading">
-        <i :class="`fa fa-${icon} fa-pulse fa-${size}x fa-fw`"
-           :style="`color: ${icon_color}`"></i>
-        <span class="sr-only">Loading...</span>
+        <template v-if="slot">
+            <div v-html="slot"></div>
+        </template>
+        <template v-else>
+            <i :class="`fa fa-${icon} fa-pulse fa-${size}x fa-fw`"
+               :style="`color: ${icon_color}`"></i>
+            <span class="sr-only">Loading...</span>
+        </template>
     </div>
 </template>
 
@@ -18,6 +23,7 @@
                 icon: 'spinner',
                 size: '3',
                 icon_color: '#ffffff',
+                slot: null,
             }
         },
         methods: {
