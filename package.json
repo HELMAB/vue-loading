@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/HELMAB/vue-loading/issues"
   },
-  "homepage": "https://github.com/HELMAB/vue-loading#README"
+  "homepage": "https://github.com/HELMAB/vue-loading#README",
+  "dependencies": {
+    "font-awesome": "^4.7.0"
+  }
 }

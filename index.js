@@ -1,4 +1,5 @@
 import indexVue from './index.vue'
+import 'font-awesome/css/font-awesome.min.css'
 
 export default {
     install(Vue, options) {
