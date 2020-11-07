@@ -1,5 +1,5 @@
-# Vuejs Loading Screen
-Using to block whlie client processed work. [For Demo](https://helmab.github.io/vue-loading/)
+# Vuejs Loading Screen ([Demo](https://helmab.github.io/vue-loading/))
+Using to block whlie client processed work.
 
 ## Screenshot
 ![Screenshot](./src/assets/screenshot.png)
