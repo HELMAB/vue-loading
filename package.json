@@ -1,6 +1,6 @@
 {
   "name": "vuejs-loading-screen",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Blocking screen while process worked",
   "main": "index.js",
   "scripts": {
@@ -11,7 +11,7 @@
     "url": "git+https://github.com/HELMAB/vue-loading.git"
   },
   "keywords": [
-    "vue-loading-screen"
+    "vuejs, loading, vuejs--loading-screen"
   ],
   "author": "HEL Mab",
   "license": "ISC",
