@@ -2,10 +2,7 @@
 Using to block whlie client processed work. [For Demo](https://helmab.github.io/vue-loading/)
 
 ## Screenshot
-<img src="https://raw.githubusercontent.com/HELMAB/vue-loading/master/assets/screenshot.png" 
-alt="Screenshot" 
-width="890" 
-height="auto">
+![Screenshot](./src/assets/screenshot.png)
 
 ## Installation
 ```
