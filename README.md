@@ -1,7 +1,6 @@
 # Vuejs Loading Screen 
-Using to block whlie client processed work. Please checkout ([Demo](https://helmab.github.io/vue-loading/)) to see how does it work.
+Using to block whlie client processed work. Please checkout [Demo](https://helmab.github.io/vue-loading/) to see how does it look like.
 
-## Screenshot
 ![Screenshot](./src/assets/screenshot.png)
 
 ## Installation
