@@ -1,13 +1,18 @@
 <template>
-  <div class="loading"
-       :style="`background-color: ${options.bg};`"
-       v-show="isLoading">
+  <div
+    class="loading"
+    :style="`background-color: ${options.bg};`"
+    v-show="isLoading"
+  >
     <template v-if="options.slot">
       <div v-html="options.slot"></div>
     </template>
     <template v-else>
-      <i :class="`fa fa-${options.icon} fa-pulse fa-${options.size}x fa-fw`"
-         :style="`color: ${options.icon_color}`"></i>
+      <i
+        class="fa-spin"
+        :class="`${options.icon} fa-${options.size}x`"
+        :style="`color: ${options.icon_color}`"
+      ></i>
       <span class="sr-only">Loading...</span>
     </template>
   </div>
@@ -15,25 +20,25 @@
 
 <script>
 export default {
-  name: 'VueLoading',
+  name: "VueLoading",
   data() {
     return {
       isLoading: false,
       options: {
-        bg: '#41b883ad',
-        icon: 'spinner',
-        size: '3',
-        icon_color: '#ffffff',
+        bg: "#41b883ad",
+        icon: "fas fa-spinner",
+        size: "3",
+        icon_color: "#ffffff",
         slot: null,
-      }
-    }
+      },
+    };
   },
   methods: {
     changeStatus(isLoading) {
-      this.isLoading = isLoading
-    }
-  }
-}
+      this.isLoading = isLoading;
+    },
+  },
+};
 </script>
 
 <style scoped>
@@ -50,7 +55,6 @@ export default {
   align-items: center;
   justify-content: center;
 }
-
 .loading i {
   position: absolute;
   opacity: 1;

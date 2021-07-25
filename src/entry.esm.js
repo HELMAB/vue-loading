@@ -1,17 +1,25 @@
+import Loading from './lib-components/Loading.vue'
+import '@fortawesome/fontawesome-free/css/all.min.css'
 
-// Import vue components
-import * as components from '@/lib-components/index';
+export default {
+  install(Vue, options) {
+    const myPluginVue = Vue.extend(Loading)
+    const vm = new myPluginVue({
+      data: {
+        isLoading: false
+      }
+    }).$mount()
 
-// install function executed by Vue.use()
-const install = function installVuejsLoadingScreen(Vue) {
-  Object.entries(components).forEach(([componentName, component]) => {
-    Vue.component(componentName, component);
-  });
-};
-
-// Create module definition for Vue.use()
-export default install;
-
-// To allow individual component use, export components
-// each can be registered via Vue.component()
-export * from '@/lib-components/index';
+    document.body.appendChild(vm.$el)
+    if (options) {
+      Object.keys(options).forEach((key) => {
+        if (options[key]) {
+          vm.options[key] = options[key]
+        }
+      })
+    }
+    Vue.prototype.$isLoading = function (isLoading) {
+      vm.changeStatus(isLoading)
+    }
+  }
+}
