@@ -1,5 +1,5 @@
-import Loading from './src/Loading'
-import 'font-awesome/css/font-awesome.min.css'
+import Loading from './lib-components/Loading.vue'
+import '@fortawesome/fontawesome-free/css/all.min.css'
 
 export default {
   install(Vue, options) {
@@ -12,7 +12,11 @@ export default {
 
     document.body.appendChild(vm.$el)
     if (options) {
-      vm.options = options
+      Object.keys(options).forEach((key) => {
+        if (options[key]) {
+          vm.options[key] = options[key]
+        }
+      })
     }
     Vue.prototype.$isLoading = function (isLoading) {
       vm.changeStatus(isLoading)
