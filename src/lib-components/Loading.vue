@@ -42,6 +42,7 @@ export default {
 </script>
 
 <style scoped>
+@import "./../../node_modules/@fortawesome/fontawesome-free/css/all.min.css";
 .loading {
   position: fixed;
   left: 0;
