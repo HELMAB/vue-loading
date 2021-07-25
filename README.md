@@ -18,7 +18,7 @@ Vue.use(loading)
 
 ```vue
 <template>
-    <h1>Welcome to VueLoading Screen</h1>
+  <h1>Welcome to VueLoading Screen</h1>
 </template>
 
 <script>
@@ -26,9 +26,12 @@ Vue.use(loading)
     methods: {
       sendHttpRequest () {
         this.$isLoading(true) // show loading screen
-        this.$axios.post(url).then(({data}) => {
-            this.$isLoading(false) // hide loading screen
+        this.$axios.post(url, params)
+        .then(({data}) => {
             console.log(data)
+        })
+        .finally(() => {
+          this.$isLoading(false) // hide loading screen
         })
       }
     },
