@@ -70,7 +70,7 @@ Vue.use(loading, {
 
 ## Translate your custom text
 
-In your `main.js` file
+Start from `main.js` file
 
 ```js
 import Vue from 'vue'
@@ -115,7 +115,7 @@ new Vue({
 
 ```
 
-To update your custom text, in `App.vue`
+And then with `App.vue` file
 
 ```js
 watch: {
