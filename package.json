@@ -1,6 +1,6 @@
 {
   "name": "vuejs-loading-screen",
-  "version": "1.10.0",
+  "version": "1.10.1",
   "description": "Blocking screen while process worked",
   "main": "dist/vuejs-loading-screen.ssr.js",
   "browser": "dist/vuejs-loading-screen.esm.js",
