@@ -68,6 +68,66 @@ Vue.use(loading, {
 })
 ```
 
+### Translate your custom text
+In your `main.js` file
+
+```js
+import Vue from 'vue'
+import VueI18n from 'vue-i18n'
+import loading from 'vuejs-loading-screen'
+
+// your i18n setup
+Vue.use(VueI18n)
+
+const messages = {
+  en: {
+    message: {
+      loading: 'Loading...'
+    }
+  },
+  km: {
+    message: {
+      loading: 'កំពុងដំណើរការ...'
+    }
+  }
+}
+
+const i18n = new VueI18n({
+  locale: 'en', // set locale
+  messages, // set locale messages
+})
+
+// config loading plugins
+Vue.use(loading, {
+  bg: '#41b883ad',
+  slot: `
+    <div class="px-5 py-3 bg-gray-800 rounded">
+      <h3 class="text-3xl text-white"><i class="fas fa-spinner fa-spin"></i> ${ i18n.t('message.loading') }</h3>
+    </div>
+  `,
+})
+
+new Vue({
+    i18n,
+    ...
+}).$mount('#app');
+
+```
+
+To update your custom text, in `App.vue`
+
+```js
+watch: {
+  '$i18n.locale' () {
+    this.$changeIsLoadingOptions({slot: `
+      <div class="px-5 py-3 bg-gray-800 rounded">
+        <h3 class="text-3xl text-white"><i class="fas fa-spinner fa-spin"></i> ${ this.$t('message.loading') }</h3>
+      </div>
+    `})
+  }
+}
+```
+
 ## Configurations
 
 | Option        | Value           | Description  |

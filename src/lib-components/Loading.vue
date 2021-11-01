@@ -37,6 +37,13 @@ export default {
     changeStatus(isLoading) {
       this.isLoading = isLoading;
     },
+    changeIsLoadingOptions (newOptions) {
+      Object.keys(this.options).forEach((key) => {
+        if (newOptions[key]) {
+          this.options[key] = newOptions[key]
+        }
+      })
+    }
   },
 };
 </script>

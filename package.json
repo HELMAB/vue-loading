@@ -20,7 +20,8 @@
     "build:unpkg": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format iife"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.15.3"
+    "@fortawesome/fontawesome-free": "^5.15.3",
+    "vue-i18n": "^8.26.5"
   },
   "devDependencies": {
     "@babel/core": "^7.14.6",
