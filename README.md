@@ -115,7 +115,7 @@ new Vue({
 
 ```
 
-And then with `App.vue` file
+And then with `App.vue` file, we need to watch `$i18n.locale` and then call `$changeIsLoadingOptions` function to update plugin options.
 
 ```js
 watch: {
