@@ -68,7 +68,8 @@ Vue.use(loading, {
 })
 ```
 
-### Translate your custom text
+## Translate your custom text
+
 In your `main.js` file
 
 ```js
