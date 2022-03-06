@@ -4,17 +4,46 @@ Using to block whlie client processed work. Please checkout [Demo](https://helma
 ![Screenshot](./src/assets/screenshot.png)
 
 ## Installation
+
+For vue 2
+
 ```
 npm i --save vuejs-loading-screen
 ```
 
+or with vue 3
+
+```
+npm i --save vue3-loading-screen
+```
+
 ## Usage
+
+Vue2:
+
 ```js
 import Vue from 'vue'
 import loading from 'vuejs-loading-screen'
 
 Vue.use(loading)
 ```
+
+Vue3:
+
+```js
+import {createApp} from 'vue'
+import App from './App.vue'
+import Loading from 'vue3-loading-screen'
+
+cosnt app = createApp(App)
+
+app.use(Loading, /*{...}*/)
+
+app.mount('#app')
+
+```
+
+From now you can use `$isLoading` as globally function to trigger show/hide loading screen.
 
 ```vue
 <template>
