@@ -35,7 +35,7 @@ import {createApp} from 'vue'
 import App from './App.vue'
 import Loading from 'vue3-loading-screen'
 
-cosnt app = createApp(App)
+const app = createApp(App)
 
 app.use(Loading, /*{...}*/)
 
