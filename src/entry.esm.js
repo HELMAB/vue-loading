@@ -4,16 +4,16 @@ export default {
   install(Vue, options) {
     const myPluginVue = Vue.extend(Loading)
 
-    Vue.prototype.$isLoading = function (isLoading) {
+    Vue.prototype.$isLoading = (isLoading) => {
       vm.changeStatus(isLoading)
     }
 
-    Vue.prototype.$changeIsLoadingOptions = function (newOptions) {
+    Vue.prototype.$changeIsLoadingOptions = (newOptions) => {
       vm.changeIsLoadingOptions(newOptions)
     }
 
     const vm = new myPluginVue({
-      data () {
+      data() {
         return {
           isLoading: false
         }

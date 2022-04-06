@@ -51,4 +51,5 @@ export default Vue.extend({
 
 <style scoped>
 @import url("https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css");
+@import "../node_modules/@fortawesome/fontawesome-free/css/all.min.css";
 </style>
